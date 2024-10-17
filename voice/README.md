@@ -43,7 +43,7 @@ make install
 
 To test it out, first record a file. Say something intelligent then hit ctrl-C to stop the recording.
 ```
-arecord -D pcm.micboost -c2 -r 48000 -f S32_LE -t wav -V mono -v out.wav
+arecord -D plughw:2,0 -c2 -r 48000 -f S32_LE -t wav -V mono -v out.wav
 ```
 
 You might need to install Flac first.
