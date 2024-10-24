@@ -2,7 +2,7 @@ import subprocess
 import sys
 import os
 
-def process_audio(wav_file):
+def process_audio(wav_file, model_name):
 
     if not os.path.exists(wav_file):
         raise FileNotFoundError(f"WAV file not found: {wav_file}")
