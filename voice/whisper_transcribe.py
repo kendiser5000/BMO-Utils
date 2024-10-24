@@ -15,9 +15,9 @@ def process_audio(wav_file, model_name):
     # Get the output and error (if any)
     output, error = process.communicate()
 
-    if error:
-        print(f"ERR: processing audio: {error.decode('utf-8')}")
-        return ""
+    # if error:
+    #     print(f"ERR: processing audio: {error.decode('utf-8')}")
+    #     return ""
 
     res = ""
     # Process and return the output string
