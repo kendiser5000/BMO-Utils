@@ -30,19 +30,14 @@ def process_audio(wav_file):
 
     return res
 
-
 def main():
-    if len(sys.argv) >= 2:
-        wav_file = "out.wav"
-        model_name = sys.argv[2] if len(sys.argv) == 3 else "tiny.en"
-        try:
-            result = process_audio(wav_file, model_name)
-            print(result)
-        except Exception as e:
-            print(f"ERR: {e}")
-    else:
-        print("Usage: python whisper_processor.py <wav_file> [<model_name>]")
-
+    wav_file = "out.wav"
+    model_name = "tiny.en"
+    try:
+        result = process_audio(wav_file, model_name)
+        print(result)
+    except Exception as e:
+        print(f"ERR: {e}")
 
 if __name__ == "__main__":
     main()
