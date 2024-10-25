@@ -35,9 +35,10 @@ def main():
     model_name = "tiny.en"
     try:
         result = process_audio(wav_file, model_name)
-        print(result)
+        print(" + result + ")
     except Exception as e:
         print(f"ERR: {e}")
+        print("")
 
 if __name__ == "__main__":
     main()
