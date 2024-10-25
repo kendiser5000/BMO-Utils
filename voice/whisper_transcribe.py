@@ -8,7 +8,7 @@ def process_audio(wav_file, model_name):
         raise FileNotFoundError(f"WAV file not found: {wav_file}")
 
     full_command = f"main -np --file {wav_file} --model /home/pi/git/whisper.cpp/models/ggml-tiny.en.bin -otxt -of speech"
-
+    # print(full_command)
     # Execute the command
     process = subprocess.Popen(full_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
