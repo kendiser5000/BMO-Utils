@@ -5,7 +5,9 @@
 
 # python3 /home/pi/bmos/gv/transcribe.py
 
-python3 whisper_trascribe.py out.wav
+ffmpeg -y -i ./rec.wav -ar 16000 -ac 1 -c:a pcm_s16le ./out16.wav > /dev/null 2>&1
+python3 whisper_trascribe.py out116.wav
 
 rm out.wav
+rm out16.wav
 rm speech.txt

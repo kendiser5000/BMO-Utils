@@ -31,7 +31,7 @@ def process_audio(wav_file, model_name):
     return res
 
 def main():
-    wav_file = "out.wav"
+    wav_file = "out16.wav"
     model_name = "tiny.en"
     try:
         result = process_audio(wav_file, model_name)
