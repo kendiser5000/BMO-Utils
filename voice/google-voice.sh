@@ -6,7 +6,7 @@
 # python3 /home/pi/bmos/gv/transcribe.py
 
 ffmpeg -y -i ./out.wav -ar 16000 -ac 1 -c:a pcm_s16le ./out16.wav > /dev/null 2>&1
-python3 home/pi/bmos/gv/whisper_transcribe.py
+python3 /home/pi/bmos/gv/whisper_transcribe.py
 
 # rm out.wav
 # rm out16.wav
