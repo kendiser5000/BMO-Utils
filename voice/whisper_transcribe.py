@@ -27,7 +27,6 @@ def process_audio(wav_file, model_name):
         f.close()
     except:
         res = ""
-    print(res)
     return res
 
 def main():
@@ -36,7 +35,7 @@ def main():
     try:
         result = process_audio(wav_file, model_name)
         # print('\"' + str(result) + '\"')
-        print(f'"{result}"')
+        print('\"' + str(result).strip() + '\"')
     except Exception as e:
         print(f"ERR: {e}")
         print("")
